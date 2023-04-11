@@ -22,6 +22,9 @@ const Planets = () => {
       onSuccess: () => console.log('data fetched'),
       // status === errorとなった際に実行される
       onError: () => console.error('data fetch faild'),
+      // pagination等に役立つ
+      // https://tanstack.com/query/v4/docs/react/guides/paginated-queries#better-paginated-queries-with-keeppreviousdata
+      // keepPreviousData: true,
     }
   );
 
